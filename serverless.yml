@@ -1,0 +1,22 @@
+service: lambda-example
+
+useDotenv: true
+
+custom:
+  webpack:
+    packager: 'yarn'
+    includeModules: true
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: ${opt:stage}
+  region: ${opt:region, 'us-west-2'}
+  versionFunctions: false
+
+functions:
+  findPeople:
+    handler: src/index.handler
+
+plugins:
+  - serverless-webpack

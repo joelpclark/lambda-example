@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "lib": ["es2017", "esnext"],
+    "module": "esnext",
+    "noEmit": false,
+    "target": "es6",
+    "strict": true,
+    "noImplicitAny": false,
+    "allowJs": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "outDir": "dist",
+    "resolveJsonModule": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true
+  },
+  "exclude": [".vscode", ".serverless", ".git", ".webpack", "node_modules", "__mocks__", "webpack.config.js", "*.spec.ts", "jest.config.js"]
+}
